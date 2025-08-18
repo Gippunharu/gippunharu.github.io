@@ -1,3 +1,8 @@
+# 네이버 Yeti 크롤러 명시 허용
+User-agent: Yeti
+Allow: /
+
+# 그 외 모든 크롤러 허용 (RFC 9309 규격)
 User-agent: *
 Allow: /
 
