@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="naver-site-verification" content="54f64b64abf1fa5f39846b2abde277a3a0e93ff6"/>
+    <meta name="google-site-verification" content="g2z4L-gFtooFglRrVIRIVDn3hf9zPSTzW9EeJbUuChY"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 검색엔진이 사이트를 설명하는 데 사용하는 정보입니다 -->
+    <title>기쁜하루 | 백일상 가격정보 큐레이션 플랫폼</title>
+    <meta name="description" content="흩어져 있는 백일상 대여 업체의 가격 정보를 한곳에 모아 가장 완벽한 선택을 제안합니다. 국내 모든 백일상 정보를 기쁜하루에서 간편하게 비교하세요.">
+    
+    <!-- 스타일링을 위한 Tailwind CSS 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Pretendard 폰트 불러오기 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- Pretendard Serif 폰트 추가 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-serif.min.css"/>
+    
+    <style>
+        /* Pretendard 폰트를 기본으로 설정합니다 */
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+            background-color: #fefcfb;
+        }
+        
+        /* Pretendard Serif 폰트를 적용할 클래스 정의 */
+        .font-serif {
+            font-family: 'Pretendard Serif Variable', 'Pretendard Serif', serif;
+        }
+        
+        /* 버튼이 부드럽게 두근거리는 애니메이션 정의 */
+        @keyframes gentle-pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.03); /* 살짝 커지는 효과 */
+            }
+        }
+
+        .animate-pulse-subtle {
+            /* 3초 주기로 gentle-pulse 애니메이션을 무한 반복합니다 */
+            animation: gentle-pulse 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <div class="flex flex-col min-h-screen">
+        <!-- 헤더: 왼쪽 정렬 적용 -->
+        <header class="py-10">
+            <div class="container mx-auto px-6 text-left">
+                <a href="https://gippunharu.com" class="inline-block transition-opacity hover:opacity-80">
+                    <h1 class="text-4xl font-normal text-[#a38579] font-serif">기쁜하루</h1>
+                </a>
+            </div>
+        </header>
+
+        <!-- 메인 컨텐츠: 왼쪽 정렬 적용 -->
+        <main class="flex-grow flex flex-col justify-center">
+            <div class="container mx-auto px-6 text-left">
+                <h2 class="text-2xl md:text-4xl font-bold text-stone-800 mb-4 leading-tight">
+                    가장 완벽한 선택을 위한<br>
+                    <span class="text-[#c7a491]">백일상 가격정보 큐레이션 플랫폼</span>
+                </h2>
+                <p class="text-sm md:text-lg text-stone-600 mb-10">
+                    흩어져 있는 모든 백일상 정보를 한곳에 모아,
+                    <br>
+                    가장 합리적인 선택을 제안합니다.
+                </p>
+                <p class="text-base md:text-xl font-bold text-stone-700 mb-6">
+                    지금 바로 30+개 브랜드를 비교해 보세요!
+                </p>
+                <a href="https://gippunharu.com" 
+                   target="_blank" 
+                   class="inline-block bg-[#a38579] text-white font-bold text-base md:text-lg py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg hover:bg-[#8a6e64] transition-all duration-300 transform hover:scale-105 animate-pulse-subtle">
+                    기쁜하루에서 모든 백일상 한눈에 보기
+                </a>
+            </div>
+        </main>
+
+        <!-- 하단 푸터: 왼쪽 정렬 적용 -->
+        <footer class="py-8 mt-12">
+            <div class="container mx-auto px-6 text-left">
+                <p class="text-stone-500 text-xs md:text-sm">&copy; 2024 기쁜하루. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
