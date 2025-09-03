@@ -37,19 +37,19 @@
             font-family: 'Pretendard Serif Variable', 'Pretendard Serif', serif;
         }
         
-        /* 버튼이 부드럽게 두근거리는 애니메이션 정의 */
-        @keyframes gentle-pulse {
+        /* 버튼이 좀 더 강렬하게 두근거리는 애니메이션 정의 */
+        @keyframes pulse-strong {
             0%, 100% {
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.03); /* 살짝 커지는 효과 */
+                transform: scale(1.05); /* 더 크게 커지는 효과 */
+                box-shadow: 0 10px 20px rgba(163, 133, 121, 0.4); /* 그림자 효과도 추가 */
             }
         }
 
-        .animate-pulse-subtle {
-            /* 3초 주기로 gentle-pulse 애니메이션을 무한 반복합니다 */
-            animation: gentle-pulse 3s ease-in-out infinite;
+        .animate-pulse-strong {
+            animation: pulse-strong 2s ease-in-out infinite;
         }
     </style>
 </head>
@@ -80,10 +80,11 @@
                 <p class="text-base md:text-xl font-bold text-stone-700 mb-6">
                     지금 바로 30+개 브랜드를 비교해 보세요!
                 </p>
-                <a href="https://gippunharu.com" 
+                <!-- 새로운 버튼 링크와 문구, 애니메이션 적용 -->
+                <a href="https://app.gippunharu.com" 
                    target="_blank" 
-                   class="inline-block bg-[#a38579] text-white font-bold text-base md:text-lg py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg hover:bg-[#8a6e64] transition-all duration-300 transform hover:scale-105 animate-pulse-subtle">
-                    기쁜하루에서 모든 백일상 한눈에 보기
+                   class="inline-block bg-[#a38579] text-white font-bold text-base md:text-lg py-3 px-8 md:py-4 md:px-10 rounded-full shadow-lg hover:bg-[#8a6e64] transition-all duration-300 transform hover:scale-105 animate-pulse-strong">
+                    기쁜하루로 입장하기
                 </a>
             </div>
         </main>
@@ -95,6 +96,15 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        // 페이지가 완전히 로드된 후 3초 뒤에 새 창을 엽니다.
+        window.onload = function() {
+            setTimeout(function() {
+                window.open('https://app.gippunharu.com', '_blank');
+            }, 3000); // 3000ms = 3초
+        };
+    </script>
 
 </body>
 </html>
