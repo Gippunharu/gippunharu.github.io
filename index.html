@@ -98,10 +98,10 @@
     </div>
 
     <script>
-        // 페이지가 완전히 로드된 후 3초 뒤에 새 창을 엽니다.
+        // 페이지가 완전히 로드된 후 3초 뒤에 현재 창에서 리다이렉트합니다.
         window.onload = function() {
             setTimeout(function() {
-                window.open('https://app.gippunharu.com', '_blank');
+                window.location.href = 'https://app.gippunharu.com';
             }, 3000); // 3000ms = 3초
         };
     </script>
